@@ -29,6 +29,12 @@ data:
               href: https://github.com/umbertocicciaa
               icon: github.png
   services.yaml: |
+    - Homelab:
+        - Grafana:
+            href: http://grafana.192.168.0.104.nip.io
+            description: Grafana dashboard
+            icon: grafana.png
+
     - Creator:
         - Portfolio:
             href: https://umbertocicciaa.github.io/
