@@ -1,0 +1,77 @@
+# --- Grafana ---
+grafana:
+  adminUser: admin
+  adminPassword: "password" # change this to a secure password
+  persistence:
+    enabled: true
+    size: 2Gi
+    storageClassName: local-path
+  service:
+    type: ClusterIP
+  ingress:
+    enabled: true            # set to true if you want Traefik ingress (see below)
+    ingressClassName: traefik
+    annotations:
+      kubernetes.io/ingress.class: traefik
+    hosts:
+      - "grafana.192.168.0.104.nip.io"        # change if enabling ingress
+    paths:
+    - "/grafana"
+    pathType: Prefix
+  sidecar:
+    dashboards:
+      enabled: true
+    datasources:
+      enabled: true
+
+# --- Prometheus ---
+prometheus:
+  service:
+    type: ClusterIP
+  prometheusSpec:
+    retention: 7d
+    scrapeInterval: 30s
+    evaluationInterval: 30s
+    resources:
+      requests:
+        cpu: 100m
+        memory: 512Mi
+      limits:
+        cpu: 500m
+        memory: 1Gi
+    storageSpec:
+      volumeClaimTemplate:
+        spec:
+          storageClassName: local-path
+          accessModes: ["ReadWriteOnce"]
+          resources:
+            requests:
+              storage: 10Gi
+
+# --- Alertmanager (optional, kept light) ---
+alertmanager:
+  alertmanagerSpec:
+    resources:
+      requests:
+        cpu: 50m
+        memory: 128Mi
+      limits:
+        cpu: 200m
+        memory: 256Mi
+
+# Reduce kube-state-metrics footprint a bit
+kube-state-metrics:
+  resources:
+    requests:
+      cpu: 30m
+      memory: 128Mi
+    limits:
+      cpu: 200m
+      memory: 256Mi
+
+# Node exporter is fine out of the box on Pi
+nodeExporter:
+  resources:
+    requests:
+      cpu: 20m
+      memory: 64Mi
