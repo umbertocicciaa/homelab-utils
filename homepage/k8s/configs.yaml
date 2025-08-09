@@ -27,25 +27,27 @@ data:
         - Github:
             - abbr: GH
               href: https://github.com/umbertocicciaa
+              icon: github.png
   services.yaml: |
-    - Homelab:
-
     - Creator:
         - Portfolio:
             href: https://umbertocicciaa.github.io/
             description: My portfolio
+            icon: user.png
         - Blog:
             href: https://umbertocicciaa.github.io/blog-umbertodomenico-ciccia/
             description: My blog
+            icon: blog.png
 
     - Social:
         - X:
             href: https://x.com/umberto_ciccia
             description: My x profile
+            icon: twitter.png
         - LinkedIn:
             href: https://www.linkedin.com/in/umberto-domenico-ciccia/
             description: My LinkedIn profile
-            
+            icon: linkedin.png
   widgets.yaml: |
     - kubernetes:
         cluster:
