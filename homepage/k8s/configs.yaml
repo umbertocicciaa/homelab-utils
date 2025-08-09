@@ -26,22 +26,26 @@ data:
     - Developer:
         - Github:
             - abbr: GH
-              href: https://github.com/
+              href: https://github.com/umbertocicciaa
   services.yaml: |
-    - My First Group:
-        - My First Service:
-            href: http://localhost/
-            description: Homepage is awesome
+    - Homelab:
 
-    - My Second Group:
-        - My Second Service:
-            href: http://localhost/
-            description: Homepage is the best
+    - Creator:
+        - Portfolio:
+            href: https://umbertocicciaa.github.io/
+            description: My portfolio
+        - Blog:
+            href: https://umbertocicciaa.github.io/blog-umbertodomenico-ciccia/
+            description: My blog
 
-    - My Third Group:
-        - My Third Service:
-            href: http://localhost/
-            description: Homepage is 😎
+    - Social:
+        - X:
+            href: https://x.com/umberto_ciccia
+            description: My x profile
+        - LinkedIn:
+            href: https://www.linkedin.com/in/umberto-domenico-ciccia/
+            description: My LinkedIn profile
+            
   widgets.yaml: |
     - kubernetes:
         cluster:
