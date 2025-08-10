@@ -34,6 +34,10 @@ data:
             href: http://grafana.192.168.0.104.nip.io
             description: Grafana dashboard
             icon: grafana.png
+        - Jenkins:
+            href: http://192.168.0.104/jenkins
+            description: Jenkins dashboard
+            icon: jenkins.png
 
     - Creator:
         - Portfolio:
