@@ -43,11 +43,11 @@ data:
         - Portfolio:
             href: https://umbertocicciaa.github.io/
             description: My portfolio
-            icon: user.png
+            icon: https://img.shields.io/badge/GitHub%20Pages-222222?style=for-the-badge&logo=github%20Pages&logoColor=white
         - Blog:
             href: https://umbertocicciaa.github.io/blog-umbertodomenico-ciccia/
             description: My blog
-            icon: blog.png
+            icon: https://img.shields.io/badge/Blogger-FF5722?style=for-the-badge&logo=blogger&logoColor=white
 
     - Social:
         - X:
