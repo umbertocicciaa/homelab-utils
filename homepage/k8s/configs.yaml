@@ -28,6 +28,23 @@ data:
             - abbr: GH
               href: https://github.com/umbertocicciaa
               icon: github.png
+        - Gitlab:
+            - abbr: GL
+              href: https://gitlab.com/umbertocicciaa
+              icon: gitlab.png
+        - Notion:
+            - abbr: N
+              href: https://www.notion.so
+              icon: notion.png
+    - University:
+        - Campus:
+            - abbr: U
+              href: https://unical.esse3.cineca.it
+              icon: university.png
+        - Courses:
+            - abbr: L
+              href: https://www.unical.it/didattica/offerta-formativa/catalogo/
+              icon: library.png
   services.yaml: |
     - Homelab:
         - Grafana:
