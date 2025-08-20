@@ -55,7 +55,10 @@ data:
             href: http://192.168.0.104/jenkins
             description: Jenkins dashboard
             icon: jenkins.png
-
+        - pgAdmin:
+            href: http://pgadmin.192.168.0.104.nip.io
+            description: pgAdmin dashboard
+            icon: pgadmin.png
     - Creator:
         - Portfolio:
             href: https://umbertocicciaa.github.io/
